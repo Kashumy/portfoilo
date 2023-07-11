@@ -1,0 +1,37 @@
+HelloWorld im Kashumy 
+**This is my Quick page**
+easy access to my profile
+___
+Updated today 12 06 2023
+01:05
+___
+
+####1 portfolio 
+[Kashumy Portfolio](https://kashumy.github.io)
+
+####2 wenglon portfoilo 
+[Wenglon Game](https://wenglon.github.io)
+
+####3 friend codinger-cutie portfoilo
+[Codinger-cutie Portfoilo](https://codinger-cutie.github.io)
+
+🌱 Im interested these languages
+
+- `C`
+- `C++`
+- `Js`
+- `Html,Css`
+
+💪 Im know
+
+- `linux terminal`
+- `makefile`
+- `You can make operating system with html on Raspberry Pi but without filemanager :P with browser on load`
+
+🎉 Im interested :
+
+- `ethical-hacking like firm ware hacking`
+- `low level programing Languages because i like old Languages like asembler`
+- `compiling buildroot offline without internet making img 
+file with no internet connection`
+- `compiling buildroot on termux on android`

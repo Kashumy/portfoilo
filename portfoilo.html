@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<html>
+<head>
+  <title>Przewijający się tekst w tle</title>
+<script type="text/javascript" src="/showdown.js"></script>
+  <style>
+    body {
+      overflow: hidden;
+      
+    }
+    
+    #scrolling-text {
+      position: relative;
+      animation: scroll 20s linear infinite;
+      white-space: nowrap;
+      font-size: 24px;
+      width: auto;
+      color: white;
+      padding: 20px;
+    }
+    
+    @keyframes scroll {
+      0% {
+        left: 100%;
+      }
+      100% {
+        left: -500%;
+      }
+    }
+    #boxtext {
+      background-color: green;
+      width: 100vw;
+      padding: 10px;
+      overflow: hidden;
+      height: 20px;
+    }
+    * {
+      margin: 0;
+    }
+    html {
+      position: fixed;
+    }
+    #zx {
+      padding: 10px;
+      overflow-y :scroll ;
+      height :calc(100vh - 60px);
+    }
+  </style>
+</head>
+<body>
+ 
+ <div id="boxtext">
+   <pt id="scrolling-text">
+     HI my name is Krystian 
+     im interested front-end and software-engineering 
+     and i like C , C++ 
+     im working at 2021/2022
+     im now creating own OS for Raspberry Pi 
+   </pt>
+ </div>
+ 
+ <div id="zx">
+   <pre style="white-space:pre-wrap " id="markdown-content"></pre>
+ </div>
+ 
+ <script>
+   // Twój kod Markdown
+   setTimeout(function (){
+   var markdownContent = data;
+   
+   // Renderowanie kodu Markdown na stronie
+   var converter = new showdown.Converter();
+   var htmlContent = converter.makeHtml(markdownContent);
+   document.getElementById('markdown-content').innerHTML = htmlContent;
+   },2000);
+   var data=0;
+   setTimeout(function (){
+  fetch('Kashumy.md')
+    .then(response => response.text())
+    .then(data => p(data))
+    .catch(error => {
+    	console.log('Błąd: Nie można odczytać pliku.', error )
+    	var catjsElement = document.getElementById('catjs');
+    	
+    }
+    );
+},100)
+function p(dt){
+  data=dt
+}
+ </script>
+</body>
+</html>
