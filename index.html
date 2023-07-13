@@ -69,7 +69,7 @@
  </div>
  
  <div id="zx">
-   <pre style="white-space:pre-wrap " id="markdown-content"></pre>
+   <pre style="white-space:pre-wrap " id="markdown-content">loading markdown content ...</pre>
 
    <scroll>
      
@@ -85,8 +85,9 @@
    // Renderowanie kodu Markdown na stronie
    var converter = new showdown.Converter();
    var htmlContent = converter.makeHtml(markdownContent);
-   document.getElementById('markdown-content').innerHTML = htmlContent;
-   },2000);
+   document.getElementById('markdown-content').innerHTML = htmlContent + `<br><br><br><br><br><br>
+   <br><br><br><br><br><br><br>`
+   },(Math.random()*1000 )+200 );
    var data=0;
    setTimeout(function (){
   fetch('README.md')
@@ -94,7 +95,6 @@
     .then(data => p(data))
     .catch(error => {
     	console.log('Błąd: Nie można odczytać pliku.', error )
-    	var catjsElement = document.getElementById('catjs');
     	
     }
     );
