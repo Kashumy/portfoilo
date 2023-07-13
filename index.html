@@ -49,9 +49,12 @@
     }
     #zx {
       padding: 10px;
+        overflow :auto ;
+        overflow-x :hidden ;
       overflow-y :scroll ;
+        
         width : calc(100% - 60px) ;
-      height :calc(100vh - 5px);
+      height :calc(100vh - 10px);
     }
     scroll {
       height : 500px;
@@ -75,8 +78,8 @@
  </div>
  
  <div id="zx">
-     <img alt="" src="./Untitled61_20230713194647.png" style="width : calc( 100% - 30px ); height:100px; " />
-   <pre style="white-space:pre-wrap " id="markdown-content">loading markdown content ...</pre>
+     <img alt="" src="./Untitled61_20230713194647.png" style="width : calc( 100% - 10px ); height:100px; " />
+<br><br><br>   <pre style="white-space:pre-wrap " id="markdown-content">loading markdown content ...</pre>
 
    <scroll>
      
@@ -97,7 +100,7 @@
    },(Math.random()*1000 )+200 );
    var data=0;
    setTimeout(function (){
-  fetch('README.md')
+  fetch('Kashumy')
     .then(response => response.text())
     .then(data => p(data))
     .catch(error => {
